@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/add_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="增加用户"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/del_user"/>
+
+    <Button
+        android:id="@+id/del_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除用户"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="116dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/update_user"/>
+
+    <Button
+        android:id="@+id/update_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新用户"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="190dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/update_username"/>
+    <Button
+        android:id="@+id/update_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新用户名称"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="190dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/get_user"/>
+    <Button
+        android:id="@+id/get_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取用户"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="262dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/get_users"/>
+
+    <Button
+        android:id="@+id/get_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取所有用户"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="333dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/get_user"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
